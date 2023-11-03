@@ -13,6 +13,7 @@
     </testsuites>
     <php>
         <ini name="error_reporting" value="-1" />
+        <env name="SYMFONY_PHPUNIT_VERSION" value="10.4" />
     </php>
     <coverage>
         <include>
