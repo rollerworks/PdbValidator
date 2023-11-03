@@ -1,4 +1,4 @@
 include vendor/rollerscapes/standards/Makefile
 
-phpunit-default:
+phpunit:
 	./vendor/bin/phpunit
