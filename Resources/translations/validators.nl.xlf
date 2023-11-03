@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="validators.en.xlf">
+        <body>
+            <trans-unit id="1">
+                <source>This value is not a registrable domain name.</source>
+                <target>Deze waarde is geen registeerbare domainnaam.</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>This value exceeds the registrable "{{ registrable }}" part of the domain-name.</source>
+                <target>Deze waarde overschrijdt het registreerbare "{registrable}" gedeelte van de domainnaam.</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>This value contains a domain-name suffix that is not publicly registrable.</source>
+                <target>Deze waarde bevat een domeinnaam suffix welke niet publiekelijk registreerbaar is.</target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>This value is not a valid domain-name.</source>
+                <target>Deze waarde is geen geldige domeinnaam.</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>This value does not contain a valid domain-name suffix.</source>
+                <target>Deze waarde bevat geen geldige domeinnaam suffix.</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>This value does not contain a domeinnaam suffix that is supported by ICANN.</source>
+                <target>Deze waarde bevat geen domeinnaam suffix welke ondersteund is door ICANN.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

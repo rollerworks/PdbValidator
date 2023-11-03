@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="validators.en.xlf">
+        <body>
+            <trans-unit id="1">
+                <source>This value is not a registrable domain name.</source>
+                <target>This value is not a registrable domain name.</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>This value exceeds the "{registrable}" part of the domain-name.</source>
+                <target>This value exceeds the "{registrable}" part of the domain-name.</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>This value contains a domain-name suffix that is not publicly registrable.</source>
+                <target>This value contains a domain-name suffix that is not publicly registrable.</target>
+            </trans-unit>
+
+            <trans-unit id="4">
+                <source>This value is not a valid domain-name.</source>
+                <target>This value is not a valid domain-name.</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>This value does not contain a valid domain-name suffix.</source>
+                <target>This value does not contain a valid domain-name suffix.</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>This value does not contain a domain-name suffix that is supported by ICANN.</source>
+                <target>This value does not contain a domain-name suffix that is supported by ICANN.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
