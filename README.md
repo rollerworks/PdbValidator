@@ -90,7 +90,7 @@ This is an open source project. If you'd like to contribute,
 please read the [Contributing Guidelines][contributing]. If you're submitting
 a pull request, please follow the guidelines in the [Submitting a Patch][patches] section.
 
-[Rollerworks X509Validator]: https://github.com/rollerworks/x509-validator
+[Rollerworks X509Validator]: https://github.com/rollerworks/x509Validator
 [composer]: https://getcomposer.org/doc/00-intro.md
 [flex]: https://symfony.com/doc/current/setup/flex.html
 [contributing]: https://contributing.rollerscapes.net/
