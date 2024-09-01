@@ -1,14 +1,14 @@
-<?xml version="1.0"?>
-<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-    <file source-language="en" datatype="plaintext" original="validators.en.xlf">
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="validators.xlf">
         <body>
             <trans-unit id="1">
                 <source>This value is not a registrable domain name.</source>
                 <target>This value is not a registrable domain name.</target>
             </trans-unit>
             <trans-unit id="2">
-                <source>This value exceeds the "{registrable}" part of the domain-name.</source>
-                <target>This value exceeds the "{registrable}" part of the domain-name.</target>
+                <source>This value exceeds the registrable "{{ registrable }}" part of the domain-name.</source>
+                <target>This value exceeds the registrable "{{ registrable }}" part of the domain-name.</target>
             </trans-unit>
             <trans-unit id="3">
                 <source>This value contains a domain-name suffix that is not publicly registrable.</source>
