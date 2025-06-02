@@ -33,7 +33,9 @@ final class DomainNameSuffixValidator extends ConstraintValidator
         'test',
     ];
 
-    public function __construct(private readonly PdpManager $pdpManager) {}
+    public function __construct(private readonly PdpManager $pdpManager)
+    {
+    }
 
     public function validate(mixed $value, Constraint $constraint): void
     {

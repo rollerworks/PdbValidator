@@ -56,9 +56,7 @@ final class DomainNameSuffixValidatorTest extends ConstraintValidatorTestCase
         $this->assertNoViolation();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_accepts_domain_names_with_known_suffixCases(): iterable
     {
         yield ['example.com'];
@@ -78,9 +76,7 @@ final class DomainNameSuffixValidatorTest extends ConstraintValidatorTestCase
         $this->assertNoViolation();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_accepts_domain_names_with_known_suffix_and_no_icann_requirementCases(): iterable
     {
         yield ['example.com'];
@@ -106,9 +102,7 @@ final class DomainNameSuffixValidatorTest extends ConstraintValidatorTestCase
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}|array{0: string, 1: string}>
-     */
+    /** @return \Generator<int, array{0: string}|array{0: string, 1: string}> */
     public static function provideRejectedDomainNames(): iterable
     {
         yield ['example.cong'];
@@ -144,9 +138,7 @@ final class DomainNameSuffixValidatorTest extends ConstraintValidatorTestCase
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_rejects_domain_name_when_icann_is_required_but_not_supported_by_domainCases(): iterable
     {
         yield ['example.github.io']; // Private suffix-registration.
@@ -163,9 +155,7 @@ final class DomainNameSuffixValidatorTest extends ConstraintValidatorTestCase
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_rejects_domain_name_when_failed_to_parseCases(): iterable
     {
         yield ['xn--94823482.nl']; // invalid IDN, which is actually thrown during the resolver phase

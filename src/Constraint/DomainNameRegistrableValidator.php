@@ -25,7 +25,9 @@ use Symfony\Component\Validator\Exception\UnexpectedValueException;
 
 final class DomainNameRegistrableValidator extends ConstraintValidator
 {
-    public function __construct(private readonly PdpManager $pdpManager) {}
+    public function __construct(private readonly PdpManager $pdpManager)
+    {
+    }
 
     public function validate(mixed $value, Constraint $constraint): void
     {

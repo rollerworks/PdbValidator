@@ -56,9 +56,7 @@ final class DomainNameRegistrableValidatorTest extends ConstraintValidatorTestCa
         $this->assertNoViolation();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_accepts_domain_names_with_known_suffixCases(): iterable
     {
         yield ['example.com'];
@@ -76,9 +74,7 @@ final class DomainNameRegistrableValidatorTest extends ConstraintValidatorTestCa
         $this->assertNoViolation();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_accepts_domain_names_with_known_suffix_and_privateCases(): iterable
     {
         yield ['example.com'];
@@ -103,9 +99,7 @@ final class DomainNameRegistrableValidatorTest extends ConstraintValidatorTestCa
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_rejects_domain_names_with_private_suffixCases(): iterable
     {
         yield ['example.github.io'];
@@ -133,9 +127,7 @@ final class DomainNameRegistrableValidatorTest extends ConstraintValidatorTestCa
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string, 1: string}>
-     */
+    /** @return \Generator<int, array{0: string, 1: string}> */
     public static function provideIt_rejects_domain_name_with_path_exceeding_registrableCases(): iterable
     {
         yield ['example.no.co.uk', 'no.co.uk'];
@@ -154,9 +146,7 @@ final class DomainNameRegistrableValidatorTest extends ConstraintValidatorTestCa
             ->assertRaised();
     }
 
-    /**
-     * @return \Generator<int, array{0: string}>
-     */
+    /** @return \Generator<int, array{0: string}> */
     public static function provideIt_rejects_domain_name_when_failed_to_parseCases(): iterable
     {
         yield ['xn--94823482.nl']; // invalid IDN, which is actually thrown during the resolver phase
