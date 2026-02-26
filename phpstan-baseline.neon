@@ -1,0 +1,19 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Method Rollerworks\\Component\\PdbValidator\\Constraint\\DomainNameRegistrable\:\:getTargets\(\) never returns string so it can be removed from the return type\.$#'
+			identifier: return.unusedType
+			count: 1
+			path: src/Constraint/DomainNameRegistrable.php
+
+		-
+			message: '#^Property Rollerworks\\Component\\PdbValidator\\Constraint\\DomainNameRegistrable\:\:\$errorNames has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Constraint/DomainNameRegistrable.php
+
+		-
+			message: '#^Property Rollerworks\\Component\\PdbValidator\\Constraint\\DomainNameSuffix\:\:\$errorNames has no type specified\.$#'
+			identifier: missingType.property
+			count: 1
+			path: src/Constraint/DomainNameSuffix.php
