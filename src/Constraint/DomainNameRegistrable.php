@@ -34,6 +34,13 @@ final class DomainNameRegistrable extends Constraint
         self::PRIVATE_SUFFIX => 'PRIVATE_SUFFIX',
     ];
 
+    protected const ERROR_NAMES = [
+        self::INVALID_SYNTAX => 'INVALID_SYNTAX',
+        self::NOT_REGISTRABLE => 'NOT_REGISTRABLE',
+        self::REGISTRABLE_LENGTH_EXCEEDED => 'REGISTRABLE_LENGTH_EXCEEDED',
+        self::PRIVATE_SUFFIX => 'PRIVATE_SUFFIX',
+    ];
+
     /**
      * @param array<string, mixed>    $options
      * @param array<int, string>|null $groups

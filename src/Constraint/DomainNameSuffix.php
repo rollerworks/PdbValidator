@@ -34,6 +34,13 @@ final class DomainNameSuffix extends Constraint
         self::ICANN_UNKNOWN => 'ICANN_UNKNOWN',
     ];
 
+    protected const ERROR_NAMES = [
+        self::INVALID_SYNTAX => 'INVALID_SYNTAX',
+        self::UNKNOWN_SUFFIX => 'UNKNOWN_SUFFIX',
+        self::RESERVED_TLD_USED => 'RESERVED_TLD_USED',
+        self::ICANN_UNKNOWN => 'ICANN_UNKNOWN',
+    ];
+
     /**
      * @param array<string, mixed>    $options
      * @param array<int, string>|null $groups
