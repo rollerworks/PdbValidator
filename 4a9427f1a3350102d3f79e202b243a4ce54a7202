@@ -1,0 +1,6 @@
+---------------------------------------------------------------------------
+
+by sstok at 2026-02-26T15:11:18Z
+
+Changed version constraint to PHP `^8.2` as this was already required by the pdb-bridge package itself.
+
